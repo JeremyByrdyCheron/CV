@@ -4,6 +4,7 @@
     <meta charset="UTF-8">   <!-- pour importer la meta utf-8 permettant de lire les caractères spéciaux -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour "prendre" la taille de l'écran -->
     <title>CV de Jérémy BYRDY--CHERON</title> <!-- change le nom de l'onglet -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <h1> CV de Jérémy BYRDY--Cheron</h1> <!-- titre principal -->
@@ -23,18 +24,21 @@
     </nav>
     <main>
         <div id="presentation"> <!-- création du bloc dans lequel je mets ma présentation -->
+            <h3>présentation</h3>
             <p>Je m'appelle Jérémy Byrdy--Cheron, j'ai 18 ans (bientôt 19) et je suis actuellement en première année de bachelor à l'école LaManu de Compigène. J'habite Le Fay Saint Quentin, une petite commune située à côté de Beauvais, suis tutélaire du permis de conduire et dispose d'une voiture pour mes déplacement quotidiens.</p>
 
         </div>
-    <div id="skills">
+    <section id="skills">
         <h2>Mes Compétences</h2>
         <div>
-            <h3>CSS</h3>
-            <p>Je suis capable de : </p>
-            <ul>
-                <li>Utiliser les fonctionnalités flex </li>
-                <li>adapter un site à la taille de l'écran qui le consulte</li>
-            </ul>
+            <div>
+                <h3>CSS</h3>
+                <p>Je suis capable de : </p>
+                <ul>
+                    <li>Utiliser les fonctionnalités flex </li>
+                    <li>Adapter un site à la taille de l'écran qui le consulte</li>
+                </ul>
+            </div>
             <div>
                 <h3>Algorithmie</h3>
                 <p>Je suis capable de : </p>
@@ -51,25 +55,49 @@
                     <li>Utiliser des opérateurs simples</li>
                     <li>Utiliser des boucles</li>
                     <li>Utiliser des objets (l'équivalent des dictionnaires en python)</li>
-                    <li>Utilise des tableaux (l'équivalent des listes en JavaScript</li>
+                    <li>Utilise des tableaux (l'équivalent des listes en python)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>design ux-ui et marketing</h3>
+                <ul>
+                    <li>Créer des personas</li>
+                    <li>Créer un market mapping</li>
+                    <li>Créer un pestel</li>
+                    <li>Créer une maquette graphique</li>
+                    <li><p>Créer un PESTEL (Politique, Économique, Socioculturel, Technologique, Environnemental  et Légal),<br> c'est à dire identifier les facteurs macro-environnementaux qui peuvent influencer une organisation </p></li>
+                </ul>
+            </div>
+            <div>
+                <h3>HTML</h3>
+                <ul>
+                    <li>Créer des formulaires</li>
+                    <li>Ajouter une image et une vidéo sur un site internet</li>
                 </ul>
             </div>
         </div>
 
-
-    </div>
+    </section>
     <div id="myProjects">
         <div>
-            <h3>Projet glacier css</h3>
-            <img src="assets/img/image glacier lamanu.png" alt="page web d'un faux glacier">
-            <p>Ici, il était question de réarranger les éléments de la page de base en utilisant les propriétés css flex.</p>
-            <a href="https://github.com/JeremyByrdyCheron/td-glacier-css">Voir le rendu complet</a> 
-        </div>
-        <div>
-            <h3>Projet interface visuelle applciation de streaming musical</h3>
-            <img src="assets/img/daft punk streaming.png" alt="reconstitution visuelle d'une applciation de streaming musical">
-            <p>Ici, il était question de refaire au mieux l'interface graphique d'une application de streaming musical encore une fois uniquement avec les propriétés flex.</p>
-            <a href="https://github.com/JeremyByrdyCheron/evaluation-css-flex" target="_blank">Voir le rendu complet</a> 
+            <div>
+                <h3>Projet glacier css</h3>
+                <img src="assets/img/image glacier lamanu.png" alt="page web d'un faux glacier">
+                <p>Ici, il était question de réarranger les éléments de la page de base en utilisant les propriétés css flex.</p>
+                <a href="https://github.com/JeremyByrdyCheron/td-glacier-css" target="_blank">Voir le rendu complet</a> 
+            </div>
+            <div>
+                <h3>Projet interface visuelle applciation de streaming musical</h3>
+                <img src="assets/img/daft punk streaming.png" alt="reconstitution visuelle d'une applciation de streaming musical">
+                <p>Ici, il était question de refaire au mieux l'interface graphique d'une application de streaming musical encore une fois uniquement avec les propriétés flex.</p>
+                <a href="https://github.com/JeremyByrdyCheron/evaluation-css-flex" target="_blank">Voir le rendu complet</a> 
+            </div>
+            <div>
+                <h3>Projet journal css</h3>
+                <img src="assets/img/journal_annimaux_fantastiques.png" alt="page web d'un faux journal sur le thème des animaux fantastiques">
+                <p>Ici, il était question de simplement changer la couleur du texte, la typographie et la couleur de fond selon différentes instructions</p>
+                <a href="https://github.com/JeremyByrdyCheron/td-journal-animaux-fantastiques" target="_blank">Voir le rendu complet</a> 
+            </div>
         </div>
     </div>
     </main>
