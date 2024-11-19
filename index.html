@@ -10,33 +10,39 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <h1>Jérémy BYRDY--CHERON</h1>
     <!-- titre principal -->
+    <h1>Jérémy BYRDY--CHERON</h1>
+    <!-- création de l'id navigation pour le bloc de nav -->
     <nav id="navigation">
       <div>
-        <!-- création de l'id navigation pour le bloc de nav -->
         <!-- crée une liste non ordonnée pour la navigation  -->
-        <p><a href="#Presentation">Présentation</a></p>
-        <!-- quand on clique sur "Présentation" dans la nav, nous redirige vers le bloc avec l'id presentation -->
-        <p><a href="#skills">Mes Compétences</a></p>
-        <!-- quand on clique sur "Mes Compétences" dans la nav, nous redirige vers le bloc avec l'id skills -->
-        <p><a href="#myProjects">Mes réalisations</a></p>
-        <!-- quand on clique sur "Mes réalisations" dans la nav, nous redirige vers le bloc avec l'id myProjects -->
-        <p><a href="#contactMe">Me contacter</a></p>
-        <!-- quand on clique sur "Me contacter" dans la nav, nous redirige vers le bloc avec l'id contactMe -->
+        <ul>
+          <li><a href="#Presentation">Présentation</a></li>
+          <!-- quand on clique sur "Présentation" dans la nav, nous redirige vers le bloc avec l'id presentation -->
+          <li><a href="#skills">Mes Compétences</a></li>
+          <!-- quand on clique sur "Mes Compétences" dans la nav, nous redirige vers le bloc avec l'id skills -->
+          <li><a href="#myProjects">Mes réalisations</a></li>
+          <!-- quand on clique sur "Mes réalisations" dans la nav, nous redirige vers le bloc avec l'id myProjects -->
+          <li><a href="#contactMe">Me contacter</a></li>
+          <!-- quand on clique sur "Me contacter" dans la nav, nous redirige vers le bloc avec l'id contactMe -->
+        </ul>
       </div>
     </nav>
     <main>
       <div id="presentation">
+        <img src="assets/img/profil.jpeg" alt="photo de profil" />
         <!-- création du bloc dans lequel je mets ma présentation -->
-        <h3>Présentation</h3>
-        <p>
-          Je m'appelle Jérémy Byrdy--Cheron, j'ai 18 ans (bientôt 19) et je suis
-          actuellement en première année de bachelor à l'école LaManu de
-          Compigène. J'habite à Le Fay Saint Quentin, une petite commune située à
-          côté de Beauvais. <br> Je suis tutélaire du permis de conduire et dispose
-          d'une voiture pour mes déplacement quotidiens.
-        </p>
+        <div id="myPresentation">
+          <h3>Présentation</h3>
+          <p>
+            Je m'appelle Jérémy Byrdy--Cheron, j'ai 18 ans (bientôt 19) et je
+            suis actuellement en première année de bachelor à l'école LaManu de
+            Compigène. J'habite à Le Fay Saint Quentin, une petite commune
+            située à côté de Beauvais. <br />
+            Je suis tutélaire du permis de conduire et dispose d'une voiture
+            pour mes déplacement quotidiens.
+          </p>
+        </div>
       </div>
       <section id="skills">
         <h2>Mes Compétences</h2>
@@ -65,9 +71,7 @@
             <ul>
               <li>des opérateurs simples</li>
               <li>des boucles</li>
-              <li>
-                des objets (l'équivalent des dictionnaires en python)
-              </li>
+              <li>des objets (l'équivalent des dictionnaires en python)</li>
               <li>des tableaux (l'équivalent des listes en python)</li>
             </ul>
           </div>
@@ -107,8 +111,8 @@
             alt="page web d'un faux glacier"
           />
           <p>
-            Ici, il était question de réarranger les éléments de la page initiale
-            en utilisant les propriétés css flex.
+            Ici, il était question de réarranger les éléments de la page
+            initiale en utilisant les propriétés css flex.
           </p>
           <a
             href="https://github.com/JeremyByrdyCheron/td-glacier-css"
@@ -143,7 +147,11 @@
             Ici, il était question de changer la police, la couleur, la taille
             et le menu au survol
           </p>
-          <a href="#" target="_blank">Voir le rendu complet</a>
+          <a
+            href="https://github.com/JeremyByrdyCheron/td-journal-animaux-fantastiques"
+            target="_blank"
+            >Voir le rendu complet</a
+          >
         </div>
       </div>
     </main>
@@ -157,7 +165,7 @@
         Me contacter par téléphone : <a href="tel:0631971793">06.31.97.17.93</a>
       </p>
       <!--  permet de téléphoner directement sur mon numéro de téléphone si cliqué depuis un téléphone portable -->
-      <p>Conditions générales d'utilisations</p>
+      <p>Conditions générales d'utilisation</p>
       <p>Copyright</p>
     </footer>
   </body>
