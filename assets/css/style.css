@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Moul&family=Noto+Sans+Ethiopic:wght@100..900&display=swap"); /* On importe la police Edu Australia VIC WA NT Hand Precursive*/
+* {
+  margin: 10px;
+}
+
+body {
+  background-color: #00ffff;
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  font-size: 12px;
+  color: #3c00ff;
+}
+/* la couleur de fond de toute la page sera bleu clair, la police la plus utilisée sera Edu Australia VIC WA NT Hand Precursive
+ et sera généralement en taille 12 px de couleur blanche*/
+button {
+  background-color: #91e2da;
+  border: none;
+}
+button a {
+  color: #3c00ff;
+}
+h1 {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  font-size: 24px;
+}
+/* les titres des sections feront 20px */
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+}
+/* les titres des sous-sections feront 16px */
+/* Si l'écran est de type mobile (de 375 px à 1024 px environ, alors on suit les instructions suivantes */
+
+#navigation div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* On aligne les catégories de la nav, et on les espace */
+#skills {
+  padding: 5vh 2vh 10vw;
+}
+/* On met une marge interne équivalent à 5% de la taille de l'écran en haut, de 10 % à droite, 15% en bas et 10% à gauche*/
+#skills > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f5deb3;
+}
+/*On crée le display flex, on utilise flex-wrap pour indiquer que si nécessaire, les éléments doivent retourner à la ligne, on justifie le texte et on applique une couleur de fond (ici couleur blé mais sujet à modifications)*/
+/* à modifier par la suite, pour que la couleur de fond ne s'applique que sous forme d'une card pour chaque compétence et à changer la couleur qui n'est que temporaire*/
+#skills > div h3 {
+  display: flex;
+  justify-content: center;
+}
+/* On centre les titres */
+
+#myProject {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+/* On crée le  */
+.project {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  justify-content: center;
+}
+.project h3 {
+  display: flex;
+  justify-content: center;
+}
+/* On souligne les titres des projets */
+.project img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+#myProjects {
+  grid-template-columns: 1fr;
+}
+#contactMe {
+  background-color: #f5deb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) {
+  img {
+    max-width: 70vh;
+  }
+  ul {
+    font-size: 16px;
+  }
+  #presentation {
+    display: flex;
+  }
+  #myPresentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  /* les titres des sections feront 20px */
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
