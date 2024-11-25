@@ -46,7 +46,7 @@ p {
 .project button a {
   text-decoration: none;
   color: white;
-  background-color: #4CAF50; 
+  background-color: #4caf50;
   padding: 10px 20px;
   border-radius: 5px;
   display: inline-block;
@@ -57,38 +57,40 @@ p {
   background-color: #45a049;
 }
 
-
-
+/* On aligne les catégories de la nav, et on les espace */
 #navigation div ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-/* On aligne les catégories de la nav, et on les espace */
+/* On met une marge interne équivalent à 5% de la taille de l'écran en haut, de 10 % à droite, 15% en bas et 10% à gauche*/
+
 #skills {
   padding: 5vh 2vh 10vw;
 }
-/* On met une marge interne équivalent à 5% de la taille de l'écran en haut, de 10 % à droite, 15% en bas et 10% à gauche*/
+
+/*On crée le display flex, on utilise flex-wrap pour indiquer que si nécessaire, les éléments doivent retourner à la ligne, on justifie le texte et on applique une couleur de fond (ici couleur blé mais sujet à modifications)*/
+
 #skills > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #f5deb3;
 }
-/*On crée le display flex, on utilise flex-wrap pour indiquer que si nécessaire, les éléments doivent retourner à la ligne, on justifie le texte et on applique une couleur de fond (ici couleur blé mais sujet à modifications)*/
-/* à modifier par la suite, pour que la couleur de fond ne s'applique que sous forme d'une card pour chaque compétence et à changer la couleur qui n'est que temporaire*/
+
+/* On centre les titres */
+
 #skills > div h3 {
   display: flex;
   justify-content: center;
 }
-/* On centre les titres */
 
+/* on crée le grid qui regroupera les projets */
 #myProject {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
 }
-/* On crée le  */
 .project {
   display: grid;
   grid-template-rows: max-content 1fr;
@@ -98,13 +100,13 @@ p {
   display: flex;
   justify-content: center;
 }
-/* On souligne les titres des projets */
+
 .project img {
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
-
+/* on change la couleur de fond du footer */
 #contactMe {
   background-color: #f5deb3;
   display: flex;
@@ -116,18 +118,14 @@ p {
   img {
     max-width: 70vh;
   }
-
+  /* on augmente la taille de la police de la nav */
   ul {
     font-size: 16px;
   }
 
+  /* le texte de la présentation se met à droite de la photo de profil */
   #presentation {
     display: flex;
-  }
-
-  #myPresentation {
-    display: flex;
-    flex-direction: column;
   }
 
   h1 {
@@ -160,10 +158,9 @@ p {
     padding: 10px; /* Un peu d'espace autour de chaque projet */
     box-sizing: border-box;
   }
- /* Les images prendront toute la largeur de leur conteneur */
+  /* Les images prendront toute la largeur de leur conteneur */
   .project img {
     width: 100%;
     height: auto; /* Pour garder les proportions de l'image */
   }
-
 }
