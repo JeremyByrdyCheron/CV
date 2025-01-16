@@ -9,6 +9,11 @@ body {
   font-size: 12px;
   color: #3c00ff;
 }
+/* change la taille de l'image de profil */
+#presentation img{
+  width: 30%;
+}
+
 /* la couleur de fond de toute la page sera bleu clair, la police la plus utilisée sera Edu Australia VIC WA NT Hand Precursive
  et sera généralement en taille 12 px de couleur blanche*/
 button {
@@ -129,6 +134,7 @@ p {
   #presentation {
     display: flex;
   }
+
 
   h1 {
     font-size: 28px;
