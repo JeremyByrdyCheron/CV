@@ -81,7 +81,7 @@ p {
 #skills > div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #f5deb3;
 }
 
@@ -90,6 +90,10 @@ p {
 #skills > div h3 {
   display: flex;
   justify-content: center;
+}
+
+#skills img{
+  width: 5vh;
 }
 
 /* on crée le grid qui regroupera les projets */
@@ -151,6 +155,13 @@ p {
 
   p {
     font-size: 16px;
+  }
+  #skills img{
+    width: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   /* Section des projets */
