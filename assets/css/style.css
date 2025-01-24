@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Moul&family=Noto+Sans+Ethiopic:wght@100..900&display=swap"); /* On importe la police Edu Australia VIC WA NT Hand Precursive*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
 * {
   margin: 10px;
 }
 
 body {
-  background-color: #00ffff;
-  font-family: "Edu AU VIC WA NT Pre", serif;
+  background-color: #a3c0c7;
+  font-family: "Montserrat", serif;
   font-size: 12px;
-  color: #3c00ff;
+  color: #000000;
 }
 /* change la taille de l'image de profil */
 #presentation img{
@@ -17,11 +19,11 @@ body {
 /* la couleur de fond de toute la page sera bleu clair, la police la plus utilisée sera Edu Australia VIC WA NT Hand Precursive
  et sera généralement en taille 12 px de couleur blanche*/
 button {
-  background-color: #91e2da;
+  background-color: #60759b;
   border: none;
 }
 button a {
-  color: #3c00ff;
+  color: #0f0f0f;
 }
 h1 {
   font-size: 28px;
@@ -53,7 +55,7 @@ p {
 .project button a {
   text-decoration: none;
   color: white;
-  background-color: #4caf50;
+  background-color: #4f506d;
   padding: 10px 20px;
   border-radius: 5px;
   display: inline-block;
@@ -61,7 +63,7 @@ p {
 }
 /* Change la couleur du bouton au survol */
 .project button a:hover {
-  background-color: #45a049;
+  background-color: #666081;
 }
 
 /* On aligne les catégories de la nav, et on les espace */
@@ -74,6 +76,7 @@ p {
 
 #skills {
   padding: 5vh 2vh 10vw;
+  border-radius: 30px;
 }
 
 /*On crée le display flex, on utilise flex-wrap pour indiquer que si nécessaire, les éléments doivent retourner à la ligne, on justifie le texte et on applique une couleur de fond (ici couleur blé mais sujet à modifications)*/
@@ -82,7 +85,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #f5deb3;
+  background-color: #60759b;
 }
 
 /* On centre les titres */
@@ -90,6 +93,7 @@ p {
 #skills > div h3 {
   display: flex;
   justify-content: center;
+  font-size: 20px;
 }
 
 #skills img{
@@ -106,7 +110,10 @@ p {
   display: grid;
   grid-template-rows: max-content 1fr;
   justify-content: center;
+  background-color: #60759b;
+  font-family: "Playwrite IN", serif;
 }
+
 .project h3 {
   display: flex;
   justify-content: center;
@@ -119,7 +126,7 @@ p {
 }
 /* on change la couleur de fond du footer */
 #contactMe {
-  background-color: #f5deb3;
+  background-color: #60759b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,9 +168,17 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  #skills ul li{
+    display: flex;
+    justify-content: center;
   }
 
+
+  .pictos{
+    margin: 40px;
+  }
   /* Section des projets */
   #myProjects {
     display: grid;
