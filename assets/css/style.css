@@ -4,7 +4,10 @@
 * {
   margin: 10px;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 body {
   background-color: #a3c0c7;
   font-family: "Montserrat", serif;
@@ -13,9 +16,13 @@ body {
 }
 /* change la taille de l'image de profil */
 #presentation img{
-  width: 30%;
+  width: 20%;
 }
 
+#presentation {
+  margin-top: 11vh;
+  margin-bottom: 11vh;
+}
 /* la couleur de fond de toute la page sera bleu clair, la police la plus utilisée sera Edu Australia VIC WA NT Hand Precursive
  et sera généralement en taille 12 px de couleur blanche*/
 button {
@@ -30,9 +37,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-a {
-  text-decoration: none;
-}
+
 
 ul {
   list-style: none;
@@ -88,6 +93,21 @@ p {
   background-color: #60759b;
 }
 
+.skillsBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 20px; /* Espacement entre les éléments */
+  justify-items: start; /* Aligne les éléments à gauche de leur colonne */
+  align-items: center;
+}
+
+.skillsBlock li {
+  display: flex;
+  align-items: center; /* Aligne l'image et le texte verticalement */
+}
+
+
+
 /* On centre les titres */
 
 #skills > div h3 {
@@ -131,6 +151,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
 /* pour les écran de type desktop */
 @media screen and (min-width: 1025px) {
   img {
@@ -144,6 +165,7 @@ p {
   /* le texte de la présentation se met à droite de la photo de profil */
   #presentation {
     display: flex;
+    align-items: center;
   }
 
 
